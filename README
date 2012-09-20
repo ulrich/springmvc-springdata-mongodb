@@ -1,0 +1,26 @@
+Spring Showcase basé sur Spring MVC, Spring Data et MongoDB
+-----------------------------------------------------------
+
+Le but de ce POC est de faire une application Spring MVC capable d'utiliser Spring Data sur une base MongoDB
+
+Configuration MongoDB :
+-----------------------
+Aucune configuration particulière est nécessaire.
+Je lance mongod de la manière suivante :
+$ sudo ./mongod --noauth --rest --dbpath="VOTRE_PATH/data"
+
+Vous pouvez consulter dans la console de MongoDB que les documents sont bien enregistrés de la manière suivante :
+$ mongo
+> use demo
+> db.person.find();
+
+Pour lancer l'application :
+---------------------------
+De la ligne de commande avec Maven:
+$ cd springmvc-springdata-mongodb
+$ mvn tomcat:run
+
+Pour utiliser l'application :
+-----------------------------
+http://localhost:8080/springmvc-springdata-mongodb/
+
