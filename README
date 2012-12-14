@@ -23,4 +23,3 @@ $ mvn tomcat:run
 Pour utiliser l'application :
 -----------------------------
 http://localhost:8080/springmvc-springdata-mongodb/
-
